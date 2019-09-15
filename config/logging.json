@@ -1,0 +1,32 @@
+{
+    "version": 1,
+    "loggers": {
+        "sample": {
+            "handlers": [
+                "console",
+                "file"
+            ]
+        }
+    },
+    "handlers": {
+        "console": {
+            "class": "logging.StreamHandler",
+            "formatter": "sample"
+        },
+        "file": {
+            "class": "logging.FileHandler",
+            "formatter": "sample",
+            "filename": "tmp/filehandler.log"
+        }
+    },
+    "formatters": {
+        "sample": {
+            "format": "%(asctime)s [%(levelname)s] %(message)s"
+        }
+    },
+    "root": {
+        "handlers": [
+            "console"
+        ]
+    }
+}
