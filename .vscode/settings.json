@@ -1,13 +1,16 @@
 {
-    "python.autoComplete.addBrackets": true,
-    "python.autoComplete.extraPaths": [
-        "${workspaceFolder}"
-    ],
+    // 拡張機能のロード時にターミナルでPython環境をアクティブにする。
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    // 仮想環境のパス。作成した仮想環境を指定する。
+    "python.venvPath": ".venv",
+    // フォーマッターの設定。autopep8 を指定する。
     "python.formatting.provider": "autopep8",
     "python.jediEnabled": false,
-    "python.linting.pylintEnabled": true,
+    // Lintの設定。flake8、mypy を有効化する。
     "python.linting.flake8Enabled": true,
     "python.linting.mypyEnabled": true,
-    "python.pythonPath": "${workspaceFolder}/.venv/Scripts/python.exe",
-    "python.venvPath": ".venv",
+    "python.linting.pylintEnabled": false,
+    // 以下はお好みで。
+    "editor.formatOnSave": true,
+    "python.autoComplete.addBrackets": true,
 }
