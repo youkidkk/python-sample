@@ -61,3 +61,10 @@ print(list)
 squares = [n**2 for n in range(10)]
 print(squares)
 # -> [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
+
+# リスト同士の結合（extend）
+l1 = [1, 2, 3]
+l2 = [4, 5, 6]
+l1.extend(l2)
+print(l1)
+# -> [1, 2, 3, 4, 5, 6]
