@@ -3,6 +3,7 @@ class Parent:
     def func1(self):
         print("func1!")
 
+
 # 継承したクラス
 
 

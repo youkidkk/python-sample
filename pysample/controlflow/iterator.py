@@ -1,5 +1,4 @@
 class FibonacciIterator:
-
     def __init__(self, max):
         self._max = max
         self._n1 = 0

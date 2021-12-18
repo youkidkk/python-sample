@@ -7,11 +7,13 @@ print(nparr)  # -> [1 2 3]
 # 要素の参照
 print(nparr[0])  # -> 1
 
-print("type: {}, shape: {}, size: {}".format(
-    nparr.dtype,  # データタイプ -> int32
-    nparr.shape,  # 配列の構造 -> (3,)
-    nparr.size,   # サイズ -> 3
-))
+print(
+    "type: {}, shape: {}, size: {}".format(
+        nparr.dtype,  # データタイプ -> int32
+        nparr.shape,  # 配列の構造 -> (3,)
+        nparr.size,  # サイズ -> 3
+    )
+)
 
 # 要素の追加
 nparr = np.append(nparr, [4, 5, 6])

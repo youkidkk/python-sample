@@ -11,7 +11,7 @@ plt.plot(x, cosy, label=" cos")
 
 plt.xlabel(" x")
 plt.ylabel(" y")
-plt.title(' sin, cos')
+plt.title(" sin, cos")
 plt.legend()
 
 plt.show()

@@ -38,8 +38,11 @@ class SampleClass:
         ・ 第一引数に自身のインスタンス（"self"）を受け取る
         """
         print("Instance method : ")
-        print("  Var1 : {0}, Var2 : {1}, Arg : {2}".format(
-            self.ins_var1, self.ins_var2, arg))
+        print(
+            "  Var1 : {0}, Var2 : {1}, Arg : {2}".format(
+                self.ins_var1, self.ins_var2, arg
+            )
+        )
 
     # 文字列化メソッド
     def __str__(self):

@@ -4,6 +4,7 @@ def deco(func):
         print("Args : {0}".format(args))
         print("Keyword Args : {0}".format(kwargs))
         func(*args, **kwargs)
+
     return wrapper
 
 
@@ -21,7 +22,9 @@ def arg_deco(arg):
         def _decorated(*args, **kwargs):
             print(arg)
             func(*args, **kwargs)
+
         return _decorated
+
     return _deco
 
 
